@@ -33,7 +33,20 @@ END;
 - Declare two numeric variables and initialize them.
 - Use an `IF` statement to compare the values.
 - Display the greater number using `DBMS_OUTPUT.PUT_LINE`.
-
+'''
+program:
+DECLARE
+    a NUMBER := 50;
+    b NUMBER := 80;
+BEGIN
+    IF a > b THEN
+        DBMS_OUTPUT.PUT_LINE('Greater number is: ' || a);
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Greater number is: ' || b);
+    END IF;
+END;
+/
+'''
 **Expected Output:**  
 Greater number is: 80
 <img width="772" height="642" alt="image" src="https://github.com/user-attachments/assets/9b546a99-d6e7-42dd-bbf4-f4bdcd2963c4" />
@@ -50,6 +63,7 @@ Greater number is: 80
 
 **Expected Output:**  
 Sum of first 10 natural numbers is: 55
+
 <img width="975" height="703" alt="image" src="https://github.com/user-attachments/assets/30fc1eef-71f3-462c-aa65-62cdf58c3710" />
 
 ---
